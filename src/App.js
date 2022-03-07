@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Console from "./components/Console";
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <Footer />
+      <Console />
     </div>
   );
 };
