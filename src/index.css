@@ -1,5 +1,6 @@
+@import-normalize;
+
 :root {
-  /* use by calling var(--varname); */
   --polarNight1: #4c566a;
   --polarNight2: #434c5e;
   --polarNight3: #3b4252;
@@ -7,12 +8,22 @@
   --snowStorm1: #eceff4;
   --snowStorm2: #e5e9f0;
   --snowStorm3: #d8dee9;
+  --frost1: #5e81ac;
+  --frost2: #81a1c1;
+  --frost3: #88c0d0;
+  --frost4: #8fbcbb;
+  --aurora1: #b48ead;
+  --aurora2: #a3be8c;
+  --aurora3: #ebcb8b;
+  --aurora4: #d08770;
+  --aurora5: #bf616a;
 }
 
 html {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  background-color: var(--snowStorm1);
 }
 
 body {
@@ -21,14 +32,18 @@ body {
   margin: 0;
 }
 
-/* 
----------
-Container
----------
- */
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.spacer {
+  aspect-ratio: 900/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/layered-waves-haikei.svg");
 }
 
 /* 
@@ -36,6 +51,7 @@ Container
 Media queries
 -------------
  */
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 95%;
