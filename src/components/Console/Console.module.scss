@@ -1,4 +1,4 @@
-@import "../../index.css";
+@use '../../index.scss';
 
 /* 
 -------
@@ -12,6 +12,7 @@ Console
 }
 
 .console-container {
+  margin-top: 50px;
   width: 925px;
   margin: 0 auto;
 }
@@ -21,13 +22,13 @@ Console
   background-color: var(--polarNight4);
   border-radius: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2.5em 3em 22em;
   grid-template-areas:
     "nav-wrapper nav-wrapper nav-wrapper"
     "top-row top-row top-row"
     "left-column right-column right-column";
-  box-shadow: -14px 15px 18px 2px #555;
+  box-shadow: -15px 15px 20px 0 rgba(0, 0, 0, .45);
 }
 
 .nav-wrapper {
@@ -241,14 +242,16 @@ Media queries
  */
 
 /* Small devices */
-@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .console-container {
-    width: 95%;
+    width: 92%;
   }
 
   .console-wrapper {
+    margin: 0px;
+    box-shadow: none;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2.5em 3em 18em 24em;
+    grid-template-rows: 2.5em 3em 18em 21em;
     grid-template-areas:
       "nav-wrapper nav-wrapper nav-wrapper"
       "top-row top-row top-row"
@@ -277,12 +280,11 @@ Media queries
 
   .console-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2.5em 3em 22em;
+    grid-template-rows: 2.5em 3em 21em;
     grid-template-areas:
       "nav-wrapper nav-wrapper nav-wrapper"
       "top-row top-row top-row"
       "left-column right-column right-column";
-    box-shadow: -14px 15px 18px 2px #555;
   }
 
   .left-column {

@@ -1,0 +1,140 @@
+@use '../../index.scss';
+
+/* 
+--------
+Projects
+--------
+ */
+
+.projects {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--polarNight4);
+  color: var(--snowStorm1);
+  overflow: auto;
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 0;
+      color: var(--frost2);
+    }
+    > p {
+      font-weight: 200;
+      line-height: 1.75rem;
+      max-width: 70ch;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      strong {
+        font-weight: 900;
+      }
+    }
+
+    .cards {
+      display: grid;
+      grid-auto-flow: row;
+      row-gap: 15px;
+    
+      .card {
+        background-image: linear-gradient(20deg, #5e81ac 20%, #81a1c1, #88c0d0, #8fbcbb 90%);
+        color: var(--snowStorm1);
+        border-radius: 15px;
+        padding: 15px;
+        > i {
+          font-size: 40px;
+          float: right;
+          color: var(--frost1);
+        }
+        > h2 {
+          color: var(--snowStorm1);
+          font-size: 30px;
+          font-weight: 900;
+          padding: .25em;
+          position: relative;
+          margin: 35px 0 0 0;
+          &::after {
+            content: '';
+            position: absolute;
+            height: 4.5px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background: var(--snowStorm1);
+          }
+        }
+        > p {
+          line-height: 1.5rem;
+        }      
+    
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          gap: .5em;
+          list-style: none;
+          padding: 0px;
+          
+          .tag {
+            border-radius: 15px;
+            font-size: .85rem;
+            padding: .45em 1em;
+            background-color: var(--snowStorm1);
+            color: var(--frost1);
+          }
+        }
+
+        .links {
+          display: flex;
+          gap: .75em;
+          justify-content: center;
+          align-items: center;
+
+          button {
+            border: none;
+            border-radius: 15px;
+            padding: .45em 1.25em;
+            background-color: var(--frost4);
+            color: var(--snowStorm1);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Laptop and up */
+@media (min-width: 1024px) {
+  .cards {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, minmax(0, 1fr));;
+    grid-template-rows: 25em;
+    column-gap: 25px;
+
+    .card {
+      position: relative;
+      padding: 15px;
+
+      .links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        button {
+          margin-bottom: 15px;
+        } 
+      }
+    }
+  }
+}
+
+/* Laptop L and up */
+@media (min-width: 1440px) {
+  .card {
+    padding: 15px 40px !important;
+  }
+}

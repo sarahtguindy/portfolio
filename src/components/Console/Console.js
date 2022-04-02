@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Console.module.css";
+import styles from "./Console.module.scss";
 
 const Console = () => {
   return (
@@ -39,12 +39,12 @@ const Console = () => {
                 <strong>About Me: </strong>
                 <br />
                 <br />
-                <p>Hey, I'm Sarah Guindy. I'm a software developer.</p>
                 <p>
-                  A cybersecurity enthusiast and privacy advocate. I'm typically
-                  either coding, reading about the latest vulnerability, or
-                  creating pixel art in my spare time. I also spend way too much
-                  time in the terminal.
+                  Hey, I'm Sarah Guindy. I'm a software developer, cybersecurity
+                  enthusiast, and privacy advocate. I'm typically either coding,
+                  reading about the latest vulnerability, or creating pixel art
+                  in my spare time. I also spend way too much time in the
+                  terminal.
                 </p>
               </p>
               <div className={styles["squares-wrapper"]}>
