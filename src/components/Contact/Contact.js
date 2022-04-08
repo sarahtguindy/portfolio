@@ -20,8 +20,12 @@ const Contact = () => {
             <form name="contact" method="post">
               <input type="hidden" name="form-name" value="contact" />
               <p>
-                <label htmlFor="name">Name</label> <br />
-                <input type="text" id="name" name="name" required />
+                <label htmlFor="first-name">First Name</label> <br />
+                <input type="text" id="first-name" name="first-name" required />
+              </p>
+              <p>
+                <label htmlFor="last-name">Last Name</label> <br />
+                <input type="text" id="last-name" name="last-name" required />
               </p>
               <p>
                 <label htmlFor="email">Email</label> <br />
