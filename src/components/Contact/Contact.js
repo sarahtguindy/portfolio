@@ -17,30 +17,23 @@ const Contact = () => {
               felis imperdiet proin fermentum leo.
             </p>
 
-            <form
-              name="contact v1"
-              method="POST"
-              data-netlify="true"
-              onSubmit="submit"
-            >
-              <input type="hidden" name="hidden-form" value="contact v1" />
-
-              <div>
-                <label htmlFor="first-name">First Name</label> <br />
-                <input id="first-name" type="text" name="first-name" />
-              </div>
-
-              <div>
+            <form name="contact" method="post">
+              <input type="hidden" name="form-name" value="contact" />
+              <p>
+                <label htmlFor="name">Name</label> <br />
+                <input type="text" id="name" name="name" required />
+              </p>
+              <p>
                 <label htmlFor="email">Email</label> <br />
-                <input id="email" type="email" name="email" />
-              </div>
-
-              <div>
+                <input type="email" id="email" name="email" required />
+              </p>
+              <p>
                 <label htmlFor="message">Message</label> <br />
-                <textarea id="message" name="message"></textarea>
-              </div>
-
-              <button type="submit">Submit</button>
+                <textarea id="message" name="message" required></textarea>
+              </p>
+              <p>
+                <input type="submit" value="Submit message" />
+              </p>
             </form>
           </div>
         </div>
