@@ -1,3 +1,4 @@
+
 @use '../../index' as *;
 
 /* 
@@ -6,7 +7,216 @@ Console
 -------
  */
 
- @keyframes blink {
+.console {
+  overflow: auto;
+  margin-top: 50px;
+}
+
+.console-container {
+  margin-top: 50px;
+  width: 925px;
+  margin: 0 auto;
+}
+
+.console-wrapper {
+  margin: 35px;
+  background-color: $polarNight4;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2.5em 3em 22em;
+  grid-template-areas:
+    "nav-wrapper nav-wrapper nav-wrapper"
+    "top-row top-row top-row"
+    "left-column right-column right-column";
+    box-shadow: -15px 15px 20px 0 rgba(0, 0, 0, .45);
+}
+
+.nav-wrapper {
+  grid-area: nav-wrapper;
+  background-color: $polarNight3;
+  border-radius: 15px 15px 0px 0px;
+  color: $snowStorm1;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-wrapper > * {
+  flex-basis: 100%;
+}
+
+.dots-wrapper {
+  display: flex;
+}
+
+.dots {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+#dot1 {
+  background-color: $aurora5;
+}
+
+#dot2 {
+  background-color: $aurora3;
+}
+
+#dot3 {
+  background-color: $aurora2;
+}
+
+.top-row {
+  grid-area: top-row;
+  color: $snowStorm1;
+  padding: 15px;
+}
+
+.top-row strong {
+  color: $aurora2;
+}
+
+.top-row p {
+  display: inline;
+  position: relative;
+}
+
+.top-row p::before,
+.top-row p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.top-row p::before {
+  background: $polarNight4;
+  animation: typewriter 1.5s steps(8) 1s forwards;
+}
+
+.top-row p::after {
+  width: 0.6em;
+  background: $snowStorm1;
+  animation: typewriter 1.5s steps(8) 1s forwards, blink 590ms steps(8) infinite;
+}
+
+.left-column {
+  grid-area: left-column;
+  padding: 25px 20px 20px 40px;
+}
+
+.left-column-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.left-column-content::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $polarNight4;
+  animation: fade 0.8s linear 3s forwards;
+}
+
+img {
+  height: 250px;
+  width: auto;
+}
+
+.right-column {
+  grid-area: right-column;
+  color: $snowStorm1;
+  padding: 25px 40px 20px 20px;
+}
+
+.right-column-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.right-column-content::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $polarNight4;
+  animation: fade 0.8s linear 3s forwards;
+}
+
+.prompt {
+  color: $aurora2 !important;
+}
+
+.right-column strong {
+  color: $aurora3;
+}
+
+.right-column p {
+  margin-top: 0;
+}
+
+.squares-wrapper {
+  display: flex;
+}
+
+.squares {
+  height: 25px;
+  width: 35px;
+  background-color: $polarNight3;
+}
+
+#square1 {
+  background-color: $polarNight1;
+}
+
+#square2 {
+  background-color: $aurora5;
+}
+
+#square3 {
+  background-color: $aurora2;
+}
+
+#square4 {
+  background-color: $aurora3;
+}
+
+#square5 {
+  background-color: $frost2;
+}
+
+#square6 {
+  background-color: $aurora1;
+}
+
+#square7 {
+  background-color: $frost3;
+}
+
+#square8 {
+  background-color: $snowStorm2;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
   to {
     background: transparent;
   }
@@ -26,267 +236,67 @@ Console
   }
 }
 
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-
-.console {
-  overflow: auto;
-  margin-top: 50px;
-
-  .console-container {
-    margin-top: 50px;
-    width: 925px;
-    margin: 0 auto;
-
-    .console-wrapper {
-      margin: 35px;
-      background-color: $polarNight4;
-      border-radius: 15px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 2.5em 3em 22em;
-      grid-template-areas:
-        "nav-wrapper nav-wrapper nav-wrapper"
-        "top-row top-row top-row"
-        "left-column right-column right-column";
-      box-shadow: -15px 15px 20px 0 rgba(0, 0, 0, .45);
-
-      .top-row {
-        grid-area: top-row;
-        color: $snowStorm1;
-        padding: 15px;
-        strong {
-          color: $aurora2;
-        }
-        p {
-          display: inline;
-          position: relative;
-        }
-        p::before,
-        p::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-        }
-        p::before {
-          background: $polarNight4;
-          animation: typewriter 1.5s steps(8) 1s forwards;
-        }
-        p::after {
-          width: 0.6em;
-          background: $snowStorm1;
-          animation: typewriter 1.5s steps(8) 1s forwards, blink 590ms steps(8) infinite;
-        }
-      }
-
-      .left-column {
-        grid-area: left-column;
-        padding: 25px 20px 20px 40px;
-  
-        .left-column-content {
-          position: relative;
-          overflow: hidden;
-          &::after {
-            content: "";
-            position: absolute;
-            z-index: 2;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: $polarNight4;
-            animation: fade 0.8s ease-in 3s forwards;
-          }
-  
-          img {
-            height: 250px;
-            width: auto;
-          }
-        }
-      }
-      
-      .nav-wrapper {
-        grid-area: nav-wrapper;
-        background-color: $polarNight3;
-        border-radius: 15px 15px 0px 0px;
-        color: $snowStorm1;
-        padding: 5px 15px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        & > * {
-          flex-basis: 100%;
-        }
-  
-        .dots-wrapper {
-          display: flex;
-  
-          #dot1 {
-            background-color: $aurora5;
-          }
-          
-          #dot2 {
-            background-color: $aurora3;
-          }
-          
-          #dot3 {
-            background-color: $aurora2;
-          }
-  
-          .dots {
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            margin: 5px;
-          }
-        }
-      }
-  
-      .right-column {
-        grid-area: right-column;
-        color: $snowStorm1;
-        padding: 25px 40px 20px 20px;
-        strong {
-          color: $aurora3;
-        }
-  
-        p {
-          margin-top: 0;
-        }
-  
-        .prompt {
-          color: $aurora2 !important;
-        }
-  
-        .right-column-content {
-          position: relative;
-          overflow: hidden;
-          &::after {
-            content: "";
-            position: absolute;
-            z-index: 2;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: $polarNight4;
-            animation: fade 0.8s ease-in 3s forwards;
-          }
-  
-          .squares-wrapper {
-            display: flex;
-  
-            #square1 {
-              background-color: $polarNight1;
-            }
-            
-            #square2 {
-              background-color: $aurora5;
-            }
-            
-            #square3 {
-              background-color: $aurora2;
-            }
-            
-            #square4 {
-              background-color: $aurora3;
-            }
-            
-            #square5 {
-              background-color: $frost2;
-            }
-            
-            #square6 {
-              background-color: $aurora1;
-            }
-            
-            #square7 {
-              background-color: $frost3;
-            }
-            
-            #square8 {
-              background-color: $snowStorm2;
-            }
-  
-            .squares {
-              height: 25px;
-              width: 35px;
-              background-color: $polarNight3;
-            }
-          }
-        }
-      }   
-    }
-  }
-}
-
 /* 
 -------------
 Media queries
 -------------
  */
 
-/* Small devices */
-@media (min-width: 320px) and (max-width: 767px) {
+/* Mobile S and up */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .console-container {
-    width: 92% !important;
+    width: 92%;
   }
 
   .console-wrapper {
-    margin: 0px !important;
-    box-shadow: none !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    grid-template-rows: 2.5em 3em 18em 21em !important;
+    margin: 0px;
+    box-shadow: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.5em 3em 18em 21em;
     grid-template-areas:
       "nav-wrapper nav-wrapper nav-wrapper"
       "top-row top-row top-row"
       "left-column left-column left-column"
-      "right-column right-column right-column" !important;
+      "right-column right-column right-column";
   }
 
   .left-column {
-    padding: 0px !important;
-    margin: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .right-column {
-    padding: 15px !important;
+    padding: 15px;
   }
 
-  .right-column::after {
-    animation: fade 0.8s ease-in 3.8s forwards !important;
+  .right-column-content::after {
+    animation: fade 0.8s linear 3.8s forwards;
   }
 }
 
-/* Medium devices */
-@media (min-width: 768px) and (max-width: 991px) {
+/* Mobile L and up */
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
   .console-container {
-    width: 95% !important;
+    width: 95%;
+  }
 
-    .console-wrapper {
-      grid-template-columns: repeat(3, 1fr) !important;
-      grid-template-rows: 2.5em 3em 21em !important;
-      grid-template-areas:
-        "nav-wrapper nav-wrapper nav-wrapper"
-        "top-row top-row top-row"
-        "left-column right-column right-column" !important;
+  .console-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.5em 3em 21em;
+    grid-template-areas:
+      "nav-wrapper nav-wrapper nav-wrapper"
+      "top-row top-row top-row"
+      "left-column right-column right-column";
+  }
 
-      .left-column {
-        padding: 15px !important;
-      }
-      
-      .right-column {
-        padding: 15px !important;
-      }
-    }
+  .left-column {
+    padding: 15px;
+  }
+
+  .right-column {
+    padding: 15px;
   }
 }

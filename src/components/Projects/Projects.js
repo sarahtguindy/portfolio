@@ -10,7 +10,10 @@ const Projects = () => {
       tags: ["React", "Redux", "Express", "MongoDB", "React Bootstrap"],
       description:
         "An eCommerce platform with fully functional feautures such as a shopping cart, admin management, a product review system, pagination, and PayPal/credit card integration.",
-      links: ["Code", "Demo"],
+      links: [
+        "https://github.com/sarahtguindy/mechanikeys",
+        "https://mechanikeys.herokuapp.com/",
+      ],
     },
     {
       icon: "fa-solid fa-gamepad",
@@ -18,7 +21,7 @@ const Projects = () => {
       tags: ["Android", "Kotlin", "XML", "MongoDB", "Room"],
       description:
         "My capstone (group) project. An Android app built with Kotlin that includes several minigames which all aim to improve a user's memory, and allows users to track their progress using distinct metrics.",
-      links: ["Code", "Demo"],
+      links: ["https://github.com/sarahtguindy/membot", ""],
     },
     {
       icon: "fa-solid fa-laptop-code",
@@ -26,7 +29,10 @@ const Projects = () => {
       tags: ["React", "CSS Modules", "SCSS", "Framer Motion"],
       description:
         "You're looking at it. My portfolio website. Inspired by my favourite code editor theme Nord, Unix, and my love for the command line. Built with a mobile-first design philosophy.",
-      links: ["Code", "Demo"],
+      links: [
+        "https://github.com/sarahtguindy/portfolio",
+        "https://sarahtguindy.netlify.app/",
+      ],
     },
   ];
 
