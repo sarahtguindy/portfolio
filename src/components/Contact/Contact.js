@@ -41,7 +41,7 @@ const Contact = () => {
                   <textarea id="message" name="message" required></textarea>
                 </p>
                 <p className={styles["submit-area"]}>
-                  <input id="submit" type="submit" value="Send" />
+                  <input type="submit" value="Send" />
                 </p>
               </form>
             </div>

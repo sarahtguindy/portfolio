@@ -49,8 +49,9 @@ const Projects = () => {
             </p>
 
             <div className={styles.cards}>
-              {projects.map((project) => (
+              {projects.map((project, i) => (
                 <Project
+                  key={i}
                   icon={project.icon}
                   title={project.title}
                   tags={project.tags}

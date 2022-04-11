@@ -17,6 +17,7 @@ Contact
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 20px 20px 4em 20px;
         h1 {
             font-size: 3rem;
             font-weight: 900;
@@ -25,27 +26,27 @@ Contact
         }
         & p {
             color: $polarNight3;
-            font-weight: 200;
+            font-weight: 300;
             line-height: 1.75rem;
             max-width: 70ch;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
             strong {
-                font-weight: 900;
+                font-weight: 700;
             }
         }
         
         .form-container {
             background: $snowStorm3;
             border-radius: 20px;
-            width: 92%;
+            width: 100%;
             margin: 0 20px 20px 20px;
             form {
                 width: 100%;
                 overflow: hidden;
                 input, 
                 textarea {
-                    border: 1px solid transparent;
+                    border: 2.5px solid transparent;
                     appearance: none;
                     padding: 8px;
                     border-radius: 15px;
@@ -54,7 +55,7 @@ Contact
                 input:focus,
                 textarea:focus {
                     outline: none !important;
-                    border: 1px solid $aurora3;
+                    border: 2.5px solid $frost3;
                 }
                 label,
                 input[type="submit"] {
