@@ -28,11 +28,11 @@ const Project = ({ icon, title, tags, description, links }) => {
 
       <div className={styles.links}>
         <a href={codeLink} target="_blank" rel="noopener noreferrer">
-          <button>Demo</button>
+          <button>Code</button>
         </a>
         {flag || (
           <a href={demoLink} target="_blank" rel="noopener noreferrer">
-            <button>Link</button>
+            <button>Demo</button>
           </a>
         )}
       </div>
