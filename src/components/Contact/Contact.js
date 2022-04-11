@@ -9,36 +9,42 @@ const Contact = () => {
       <section className={styles.contact}>
         <div className="container">
           <div className={styles["contact-container"]}>
-            <h1>Contact</h1>
+            <h1>Contact Me</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut <strong>labore et dolore </strong>
-              magna aliqua. Aliquam etiam erat velit scelerisque. Scelerisque
-              felis imperdiet proin fermentum leo.
+              Like what you see? Want to hire me?{" "}
+              <strong>Let's get in touch.</strong>
             </p>
 
-            <form name="contact" method="post">
-              <input type="hidden" name="form-name" value="contact" />
-              <p>
-                <label htmlFor="first-name">First Name</label> <br />
-                <input type="text" id="first-name" name="first-name" required />
-              </p>
-              <p>
-                <label htmlFor="last-name">Last Name</label> <br />
-                <input type="text" id="last-name" name="last-name" required />
-              </p>
-              <p>
-                <label htmlFor="email">Email</label> <br />
-                <input type="email" id="email" name="email" required />
-              </p>
-              <p>
-                <label htmlFor="message">Message</label> <br />
-                <textarea id="message" name="message" required></textarea>
-              </p>
-              <p>
-                <input type="submit" value="Submit message" />
-              </p>
-            </form>
+            <div className={styles["form-container"]}>
+              <form name="contact" method="post">
+                <input type="hidden" name="form-name" value="contact" />
+
+                <p className={styles["first-name-area"]}>
+                  <label htmlFor="first-name">First Name</label> <br />
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </p>
+                <p className={styles["last-name-area"]}>
+                  <label htmlFor="last-name">Last Name</label> <br />
+                  <input type="text" id="last-name" name="last-name" required />
+                </p>
+                <p className={styles["email-area"]}>
+                  <label htmlFor="email">Email</label> <br />
+                  <input type="email" id="email" name="email" required />
+                </p>
+                <p className={styles["message-area"]}>
+                  <label htmlFor="message">Message</label> <br />
+                  <textarea id="message" name="message" required></textarea>
+                </p>
+                <p className={styles["submit-area"]}>
+                  <input id="submit" type="submit" value="Send" />
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </section>

@@ -17,6 +17,10 @@ $aurora3: #ebcb8b;
 $aurora4: #d08770;
 $aurora5: #bf616a;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   padding: 0;
@@ -47,7 +51,10 @@ body {
 .spacer2 {
   aspect-ratio: 900/200;
   width: 100%;
-  background-image: linear-gradient(-5deg, $snowStorm1 50%, $polarNight4 50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/wave-haikei.svg");
 }
 
 /* 
