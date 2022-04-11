@@ -1,0 +1,59 @@
+@use '../../index' as *;
+
+/* 
+------
+Footer
+------
+*/
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    margin-top: auto;
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $snowStorm3;
+
+        .copyright,
+        .socials {
+            color: $polarNight4;
+        }
+
+        .copyright {
+            min-width: 20px;
+        }
+
+        .socials {
+            margin-bottom: 15px;
+        }
+
+        .socials i {
+            color: $polarNight3;
+            font-size: 40px;
+        }
+
+        .socials > :first-child {
+            margin: 10px;
+        }
+    }
+}
+
+/* Mobile L and up */
+@media (min-width: 425px) {
+    footer {
+        flex-direction: row !important;
+        justify-content: space-between;
+        padding: 10px;
+
+        .copyright {
+            padding-left: 2em;
+            margin: 0 !important;
+        }
+
+        .socials {
+            padding-right: 2em;
+            margin: 0 !important;
+        }
+    }
+}
