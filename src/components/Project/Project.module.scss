@@ -41,9 +41,13 @@ Project
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      gap: .5em;
       list-style: none;
       padding: 0px;
+      // gap: .5em;
+      > * {
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
       
       .tag {
         border-radius: 20px;
@@ -56,9 +60,12 @@ Project
 
     .links {
       display: flex;
-      gap: .75em;
       justify-content: center;
       align-items: center;
+      // gap: .75em;
+      > * + * {
+        margin-left: .7em;
+      }
 
       button {
         border: none;
