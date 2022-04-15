@@ -46,6 +46,13 @@ body {
   background-position: center;
   background-size: cover;
   background-image: url("./assets/layered-waves-haikei.svg");
+
+  @supports not (aspect-ratio: auto) { 
+    padding-top: 25%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 .spacer2 {
@@ -55,6 +62,15 @@ body {
   background-position: center;
   background-size: cover;
   background-image: url("./assets/wave-haikei.svg");
+
+  @supports not (aspect-ratio: auto) { 
+    padding-top: 25%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 /* 
