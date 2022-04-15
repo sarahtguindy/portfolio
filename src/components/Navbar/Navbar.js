@@ -103,7 +103,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className={styles.cv}>
-                <a href="/public/CV.pdf" download>
+                <a href="./CV.pdf" download>
                   <button>Download CV</button>
                 </a>
               </li>
