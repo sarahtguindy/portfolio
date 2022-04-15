@@ -3,7 +3,7 @@ import styles from "./Console.module.scss";
 
 const Console = () => {
   return (
-    <section className={styles.console}>
+    <section id="console" className={styles.console}>
       <div className={styles["console-container"]}>
         <div className={styles["console-wrapper"]}>
           <div className={styles["nav-wrapper"]}>

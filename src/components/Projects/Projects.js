@@ -40,7 +40,7 @@ const Projects = () => {
     <>
       <div className="spacer"></div>
 
-      <section className={styles.projects}>
+      <section id="projects" className={styles.projects}>
         <div className="container">
           <div className={styles["projects-container"]}>
             <h1>Projects</h1>

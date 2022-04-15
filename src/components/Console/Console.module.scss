@@ -8,7 +8,7 @@ Console
 
 .console {
   overflow: auto;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .console-container {
@@ -297,5 +297,12 @@ Media queries
 
   .right-column {
     padding: 15px;
+  }
+}
+
+/* Laptop and up */
+@media (min-width: 1024px) {
+  .console {
+    margin-top: 110px;
   }
 }
