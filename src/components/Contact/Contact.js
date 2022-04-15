@@ -6,7 +6,7 @@ const Contact = () => {
     <>
       <div className="spacer2"></div>
 
-      <section className={styles.contact}>
+      <section id="contact" className={styles.contact}>
         <div className="container">
           <div className={styles["contact-container"]}>
             <h1>Contact Me</h1>
