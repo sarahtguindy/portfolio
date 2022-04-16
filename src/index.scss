@@ -17,6 +17,8 @@ $aurora3: #ebcb8b;
 $aurora4: #d08770;
 $aurora5: #bf616a;
 
+$aspectRatio: 900/200;
+
 * {
   box-sizing: border-box;
 }
@@ -46,12 +48,19 @@ body {
   background-position: center;
   background-size: cover;
   background-image: url("./assets/layered-waves-haikei.svg");
+}
 
-  @supports not (aspect-ratio: auto) { 
-    padding-top: 25%;
-    height: 0;
-    position: relative;
-    overflow: hidden;
+@supports not (aspect-ratio: auto) { 
+  .spacer::before {
+    float: left;
+    padding-top: calc((1 / ($aspectRatio))*100%);
+    content: "";
+  }
+
+  .spacer::after {
+    display: block;
+    content: "";
+    clear: both;
   }
 }
 
@@ -62,14 +71,19 @@ body {
   background-position: center;
   background-size: cover;
   background-image: url("./assets/wave-haikei.svg");
+}
 
-  @supports not (aspect-ratio: auto) { 
-    padding-top: 25%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    height: 0;
-    position: relative;
-    overflow: hidden;
+@supports not (aspect-ratio: auto) { 
+  .spacer2::before {
+    float: left;
+    padding-top: calc((1 / ($aspectRatio))*100%);
+    content: "";
+  }
+
+  .spacer2::after {
+    display: block;
+    content: "";
+    clear: both;
   }
 }
 

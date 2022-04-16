@@ -11,8 +11,8 @@ const Contact = () => {
           <div className={styles["contact-container"]}>
             <h1>Contact Me</h1>
             <p>
-              Like what you see? Want to hire me?{" "}
-              <strong>Let's get in touch.</strong>
+              Like what you see? Want to hire me? Or maybe you just want to geek
+              out and swap dotfiles? <strong>Let's get in touch.</strong>
             </p>
 
             <div className={styles["form-container"]}>

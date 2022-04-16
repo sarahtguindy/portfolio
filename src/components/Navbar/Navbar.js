@@ -22,7 +22,7 @@ const Navbar = () => {
       },
     },
     closed: {
-      top: "-40vh",
+      top: "-30vh",
       transition: {
         when: "afterChildren",
       },
@@ -35,7 +35,7 @@ const Navbar = () => {
     },
     closed: {
       opacity: 0,
-      transition: { duration: 0.2 },
+      transition: { duration: 0.4 },
     },
   };
 

@@ -5,6 +5,14 @@ import Project from "../Project/Project";
 const Projects = () => {
   const projects = [
     {
+      icon: "fa-solid fa-laptop-code",
+      title: "Portfolio",
+      tags: ["React", "CSS Modules", "SCSS", "Framer Motion"],
+      description:
+        "You're looking at it. My portfolio website. Inspired by my favourite code editor theme Nord, Unix, and my love for the command line. Built with a mobile-first design philosophy.",
+      links: ["https://github.com/sarahtguindy/portfolio", ""],
+    },
+    {
       icon: "fa-solid fa-tags",
       title: "MechaniKeys",
       tags: ["React", "Redux", "Express", "MongoDB", "React Bootstrap"],
@@ -18,21 +26,10 @@ const Projects = () => {
     {
       icon: "fa-solid fa-gamepad",
       title: "MemBot",
-      tags: ["Android", "Kotlin", "XML", "MongoDB", "Room"],
+      tags: ["Android", "Kotlin", "XML", "Room"],
       description:
-        "My capstone (group) project. An Android app built with Kotlin that includes several minigames which all aim to improve a user's memory, and allows users to track their progress using distinct metrics.",
+        "My capstone group project. An Android app built with Kotlin that includes several minigames which all aim to improve a user's memory, and allows users to track their progress using distinct metrics.",
       links: ["https://github.com/sarahtguindy/membot", ""],
-    },
-    {
-      icon: "fa-solid fa-laptop-code",
-      title: "Portfolio",
-      tags: ["React", "CSS Modules", "SCSS", "Framer Motion"],
-      description:
-        "You're looking at it. My portfolio website. Inspired by my favourite code editor theme Nord, Unix, and my love for the command line. Built with a mobile-first design philosophy.",
-      links: [
-        "https://github.com/sarahtguindy/portfolio",
-        "https://sarahtguindy.netlify.app/",
-      ],
     },
   ];
 
