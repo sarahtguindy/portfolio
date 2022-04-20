@@ -5,7 +5,6 @@ import Project from "../Project/Project";
 const Projects = () => {
   const projects = [
     {
-      icon: "fa-solid fa-laptop-code",
       title: "Portfolio",
       tags: ["React", "CSS Modules", "SCSS", "Framer Motion"],
       description:
@@ -13,7 +12,6 @@ const Projects = () => {
       links: ["https://github.com/sarahtguindy/portfolio", ""],
     },
     {
-      icon: "fa-solid fa-tags",
       title: "MechaniKeys",
       tags: ["React", "Redux", "Express", "MongoDB", "React Bootstrap"],
       description:
@@ -24,7 +22,6 @@ const Projects = () => {
       ],
     },
     {
-      icon: "fa-solid fa-gamepad",
       title: "MemBot",
       tags: ["Android", "Kotlin", "XML", "Room"],
       description:
@@ -55,7 +52,6 @@ const Projects = () => {
               {projects.map((project, i) => (
                 <Project
                   key={i}
-                  icon={project.icon}
                   title={project.title}
                   tags={project.tags}
                   description={project.description}

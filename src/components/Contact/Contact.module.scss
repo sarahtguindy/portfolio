@@ -46,16 +46,16 @@ Contact
                 overflow: hidden;
                 input, 
                 textarea {
-                    border: 2.5px solid transparent;
+                    border: 2.75px solid transparent;
                     appearance: none;
                     padding: 8px;
                     border-radius: 15px;
-                    width: 80%;
+                    width: 85%;
                 }
                 input:focus,
                 textarea:focus {
                     outline: none !important;
-                    border: 2.5px solid $frost3;
+                    border: 2.75px solid $frost3;
                 }
                 label,
                 input[type="submit"] {
@@ -69,6 +69,12 @@ Contact
                     cursor: pointer;
                     color: $snowStorm1;
                     background-color: $polarNight1;
+                    border: 2.75px solid transparent;
+                }
+                input[type="submit"]:hover {
+                    color: $polarNight4;
+                    background-color: $frost3;
+                    border: 2.75px solid $snowStorm1;
                 }
             }
         }
@@ -97,7 +103,7 @@ Contact
         input, 
         textarea {
             width: 100% !important;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
         .first-name-area {

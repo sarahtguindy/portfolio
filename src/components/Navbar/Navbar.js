@@ -35,7 +35,7 @@ const Navbar = () => {
     },
     closed: {
       opacity: 0,
-      transition: { duration: 0.4 },
+      transition: { duration: 0.3 },
     },
   };
 
@@ -104,7 +104,10 @@ const Navbar = () => {
               </li>
               <li className={styles.cv}>
                 <a href="./CV.pdf" download>
-                  <button>Download CV</button>
+                  <button>
+                    Download CV{" "}
+                    <i className="fa-solid fa-circle-arrow-down"></i>
+                  </button>
                 </a>
               </li>
             </ul>

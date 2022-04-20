@@ -7,7 +7,7 @@ const Footer = () => {
       <section className={styles.footer}>
         <footer>
           <p className={styles.copyright}>
-            &copy; 2022 Copyright: Sarah Guindy
+            Copyright &copy; 2022 sarahtguindy.dev
           </p>
           <div className={styles.socials}>
             <a
