@@ -11,18 +11,13 @@ Project
     color: $snowStorm1;
     border-radius: 15px;
     padding: 15px;
-    > i {
-      font-size: 40px;
-      float: right;
-      color: $frost1;
-    }
     > h2 {
       color: $snowStorm1;
       font-size: 30px;
       font-weight: 900;
       padding: .25em;
       position: relative;
-      margin: 35px 0 0 0;
+      margin: 25px 0 0 0;
       &::after {
         content: '';
         position: absolute;

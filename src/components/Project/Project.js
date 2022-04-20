@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Project.module.scss";
 
-const Project = ({ icon, title, tags, description, links }) => {
+const Project = ({ title, tags, description, links }) => {
   let codeLink = links[0];
   let demoLink = links[1];
   let flag = false;
@@ -12,8 +12,6 @@ const Project = ({ icon, title, tags, description, links }) => {
 
   return (
     <div className={styles.card}>
-      <i className={icon}></i>
-
       <h2>{title}</h2>
 
       <ul className={styles.tags}>
