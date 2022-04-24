@@ -44,7 +44,7 @@ const Navbar = () => {
       <nav className={styles["navbar-container"]}>
         <div className={styles["flex-container"]}>
           <div className={styles["left-column"]}>
-            <a href="#">
+            <a href="#top">
               <h1>
                 Sarah Guindy <i className="fa-solid fa-code"></i>
               </h1>
@@ -83,7 +83,7 @@ const Navbar = () => {
       <nav className={styles["navbar-container-lg"]}>
         <div className={styles["flex-container-lg"]}>
           <div className={styles["left-column-lg"]}>
-            <a href="#">
+            <a href="#top">
               <h1>
                 Sarah Guindy <i className="fa-solid fa-code"></i>
               </h1>
