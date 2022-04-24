@@ -44,9 +44,11 @@ const Navbar = () => {
       <nav className={styles["navbar-container"]}>
         <div className={styles["flex-container"]}>
           <div className={styles["left-column"]}>
-            <h1>
-              Sarah Guindy <i className="fa-solid fa-code"></i>
-            </h1>
+            <a href="#">
+              <h1>
+                Sarah Guindy <i className="fa-solid fa-code"></i>
+              </h1>
+            </a>
           </div>
 
           <div className={styles["right-column"]}>
@@ -81,9 +83,11 @@ const Navbar = () => {
       <nav className={styles["navbar-container-lg"]}>
         <div className={styles["flex-container-lg"]}>
           <div className={styles["left-column-lg"]}>
-            <h1>
-              Sarah Guindy <i className="fa-solid fa-code"></i>
-            </h1>
+            <a href="#">
+              <h1>
+                Sarah Guindy <i className="fa-solid fa-code"></i>
+              </h1>
+            </a>
           </div>
           <div className={styles["right-column-lg"]}>
             <ul className={styles["menu-lg"]}>
@@ -100,14 +104,6 @@ const Navbar = () => {
               <li>
                 <a className={styles.tag} href="#contact">
                   Contact
-                </a>
-              </li>
-              <li className={styles.cv}>
-                <a href="./CV.pdf" download>
-                  <button>
-                    Download CV{" "}
-                    <i className="fa-solid fa-circle-arrow-down"></i>
-                  </button>
                 </a>
               </li>
             </ul>

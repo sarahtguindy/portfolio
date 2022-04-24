@@ -69,12 +69,6 @@ Contact
                     cursor: pointer;
                     color: $snowStorm1;
                     background-color: $polarNight1;
-                    border: 2.75px solid transparent;
-                    &:hover {
-                        color: $polarNight4;
-                        background-color: $frost3;
-                        border: 2.75px solid $snowStorm1;
-                    }
                 }
             }
         }

@@ -32,15 +32,20 @@ Navbar
     
                 .left-column {
                     min-width: fit-content;
-                    h1 {
-                        font-size: 1.5rem;
-                        text-transform: uppercase;
-                        margin: 0;
-                        float: left;
-                        i {
-                            color: $aurora3;
+                    a {
+                        text-decoration: none;
+                        h1 {
+                            color: $snowStorm1;
+                            font-size: 1.5rem;
+                            text-transform: uppercase;
+                            margin: 0;
+                            float: left;
+                            i {
+                                color: $aurora3;
+                            }
                         }
                     }
+                    
                 }
         
                 .right-column {
@@ -93,18 +98,21 @@ Navbar
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.5em 2em;
+            padding: 1.5em 4em;
 
             .left-column-lg {
-                h1 {
-                    color: $snowStorm1;
-                    font-size: 1.75rem;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    letter-spacing: .2rem;
-                    margin: 0;
-                    i {
-                        color: $aurora3;
+                a {
+                    text-decoration: none;
+                    h1 {
+                        color: $snowStorm1;
+                        font-size: 1.75rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: .2rem;
+                        margin: 0;
+                        i {
+                            color: $aurora3;
+                        }
                     }
                 }
             }
@@ -117,7 +125,7 @@ Navbar
                     list-style: none;
                     margin: 0;
                     li {
-                        padding-left: 25px;
+                        padding-left: 2em;
                         position: relative;
                         display: inline-block;
                     }
@@ -130,18 +138,6 @@ Navbar
 
                     .tag:hover {
                         color: $frost2;
-                    }
-
-                    .cv {
-                        a button {
-                            cursor: pointer;
-                            border: none;
-                            border-radius: 20px;
-                            padding: .45em .85em;
-                            background-color: $polarNight4;
-                            color: $frost2;
-                            font-weight: 500;
-                        }
                     }
                 }
             }
