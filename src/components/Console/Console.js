@@ -3,7 +3,7 @@ import styles from "./Console.module.scss";
 
 const Console = () => {
   return (
-    <section id="console" className={styles.console}>
+    <section className={styles.console}>
       <div className={styles["console-container"]}>
         <div className={styles["console-wrapper"]}>
           <div className={styles["nav-wrapper"]}>
@@ -40,11 +40,10 @@ const Console = () => {
                 <br />
                 <br />
                 <p>
-                  Hey, I'm Sarah Guindy. I'm a software developer, cybersecurity
-                  enthusiast, and privacy advocate. I'm typically either coding,
-                  reading about the latest vulnerability, or creating pixel art
-                  in my spare time. I also spend way too much time in the
-                  terminal.
+                  A software developer, cybersecurity enthusiast, and privacy
+                  advocate. I'm typically either coding, reading about the
+                  latest vulnerability, or creating pixel art in my spare time.
+                  I also spend way too much time in the terminal.
                 </p>
               </p>
               <div className={styles["squares-wrapper"]}>

@@ -1,3 +1,4 @@
+@use "sass:math";
 @import-normalize;
 
 $polarNight1: #4c566a;
@@ -17,7 +18,7 @@ $aurora3: #ebcb8b;
 $aurora4: #d08770;
 $aurora5: #bf616a;
 
-$aspectRatio: 900/200;
+$aspectRatio: math.div(900, 200);
 
 * {
   box-sizing: border-box;

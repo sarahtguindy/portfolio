@@ -39,13 +39,21 @@ const Projects = () => {
           <div className={styles["projects-container"]}>
             <h1>Projects</h1>
             <p>
-              Here are just a few of <strong>my most notable projects</strong>,
-              some of which have their own live demo, along with a link to that
-              project's repo where you can find more information about each
-              project.{" "}
-              <strong>You can find even more of my work on GitHub</strong> where
-              I post fun little scripts and smaller projects that you won't find
-              here!
+              Here are just a few <strong>notable projects</strong> of mine,
+              some of which have a demo, along with a link to that project's
+              repo where you can find more information about each project.{" "}
+              <strong>
+                You can find even more of my work on{" "}
+                <a
+                  href="https://github.com/sarahtguindy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </strong>{" "}
+              where I post fun little scripts and smaller projects that you
+              won't find here!
             </p>
 
             <div className={styles.cards}>
