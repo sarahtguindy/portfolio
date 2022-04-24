@@ -32,6 +32,13 @@ Projects
       margin-bottom: 2.5rem;
       strong {
         font-weight: 700;
+        a {
+          text-decoration: none;
+          color: $snowStorm1;
+          &:hover {
+            color: $frost2;
+          }
+        }
       }
     }
 
@@ -47,7 +54,7 @@ Projects
 @media (min-width: 1024px) {
   .cards {
     grid-auto-flow: column;
-    grid-template-columns: repeat(3, minmax(0, 1fr));;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: 25em;
     column-gap: 25px;
   }

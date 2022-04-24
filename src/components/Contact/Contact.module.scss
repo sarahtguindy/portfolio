@@ -24,7 +24,7 @@ Contact
             margin-bottom: 0;
             color: $polarNight2;
         }
-        & p {
+        p {
             color: $polarNight3;
             font-weight: 300;
             line-height: 1.75rem;
@@ -70,11 +70,11 @@ Contact
                     color: $snowStorm1;
                     background-color: $polarNight1;
                     border: 2.75px solid transparent;
-                }
-                input[type="submit"]:hover {
-                    color: $polarNight4;
-                    background-color: $frost3;
-                    border: 2.75px solid $snowStorm1;
+                    &:hover {
+                        color: $polarNight4;
+                        background-color: $frost3;
+                        border: 2.75px solid $snowStorm1;
+                    }
                 }
             }
         }

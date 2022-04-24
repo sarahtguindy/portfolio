@@ -1,0 +1,114 @@
+@use '../../index' as *;
+
+/* 
+------
+Skills
+------
+ */
+
+.skills {
+    font-family: 'Roboto', sans-serif !important;
+    color: $polarNight4;
+    overflow: auto;
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 20px 0px 20px;
+
+        .showcase {
+            display: grid;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            margin: 0 20px 0px 20px;
+            padding: 2em;
+
+            .skill {
+                padding: 15px;
+                .heading {
+                    display: flex;
+                    align-items: flex-start;
+                    i {
+                        color: $frost1;
+                        align-self: center;
+                        font-size: 2.25rem;
+                    }
+                    h2 {
+                        color: $polarNight1;
+                        align-self: center;
+                        font-size: 1.5rem;
+                        font-weight: 900;
+                        padding-left: .75em;
+                        margin: 0;
+                    }
+                }
+                p {
+                    color: $polarNight4;
+                    margin-top: 15px;
+                    font-weight: 300;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .showcase {
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 20em 20em; 
+        grid-template-areas: 
+            "skill1 skill1 skill2"
+            "skill3 skill4 skill5";
+
+        .skill {
+            padding: 20px !important;
+        }
+        
+        #skill1 {
+            grid-area: skill1;
+        }
+
+        #skill2 {
+            grid-area: skill2;
+        }
+
+        #skill3 {
+            grid-area: skill3;
+        }
+
+        #skill4 {
+            grid-area: skill4;
+        }
+
+        #skill5 {
+            grid-area: skill5;
+        }
+    }
+}
+
+/* Laptop and up */
+@media (min-width: 1024px) {
+    .showcase {
+        grid-template-rows: 15em 17em;
+        .heading {
+            i {
+                font-size: 2.75rem !important;
+            }
+            h2 {
+                font-size: 1.75rem !important;
+            }
+        }
+    }
+}
+
+/* Laptop L and up */
+@media (min-width: 1440px) {
+    .showcase {
+        grid-template-rows: 11em 17em;
+    }
+}
