@@ -39,9 +39,9 @@ const Projects = () => {
           <div className={styles["projects-container"]}>
             <h1>Projects</h1>
             <p>
-              Here are just a few <strong>notable projects</strong> of mine,
-              some of which have a demo, along with a link to that project's
-              repo where you can find more information about each project.{" "}
+              Here are just a few notable projects of mine, some of which have a
+              demo, along with a link to that project's repo where you can find
+              more information about each project.{" "}
               <strong>
                 You can find even more of my work on{" "}
                 <a

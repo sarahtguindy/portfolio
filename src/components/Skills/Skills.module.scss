@@ -23,8 +23,7 @@ Skills
             justify-content: center;
             align-items: flex-start;
             width: 100%;
-            margin: 0 20px 0px 20px;
-            padding: 2em;
+            margin: 2.5em 20px 2.5em 20px;
 
             .skill {
                 padding: 15px;
@@ -64,6 +63,8 @@ Skills
         grid-template-areas: 
             "skill1 skill1 skill2"
             "skill3 skill4 skill5";
+        padding: 2em;
+        margin: 0px 20px 0px 20px !important;
 
         .skill {
             padding: 20px !important;
@@ -100,7 +101,8 @@ Skills
                 font-size: 2.75rem !important;
             }
             h2 {
-                font-size: 1.75rem !important;
+                font-size: 1.3rem !important;
+                white-space: nowrap;
             }
         }
     }
