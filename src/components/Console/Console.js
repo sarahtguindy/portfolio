@@ -40,8 +40,8 @@ const Console = () => {
                 <br />
                 <br />
                 <p>
-                  A software developer, cybersecurity enthusiast, and privacy
-                  advocate. I'm typically either coding, reading about the
+                  A developer, cybersecurity enthusiast, and privacy
+                  advocate. I'm typically coding, reading about the
                   latest vulnerability, or creating pixel art in my spare time.
                   I also spend way too much time in the terminal.
                 </p>

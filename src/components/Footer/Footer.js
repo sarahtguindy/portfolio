@@ -24,6 +24,13 @@ const Footer = () => {
             >
               <i className="fab fa-linkedin"></i>
             </a>
+            <a
+              href="https://medium.com/@sarahtguindy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-medium"></i>
+            </a>
           </div>
         </footer>
       </section>

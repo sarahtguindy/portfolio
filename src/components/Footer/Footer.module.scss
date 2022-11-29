@@ -9,6 +9,7 @@ Footer
 .footer {
     font-family: 'Roboto', sans-serif;
     margin-top: auto;
+
     footer {
         display: flex;
         flex-direction: column;
@@ -33,8 +34,9 @@ Footer
             font-size: 40px;
         }
 
-        .socials > :first-child {
-            margin: 10px;
+        /* Selects first 2 children */
+        .socials> :nth-child(-n + 2) {
+            padding-right: 10px;
         }
     }
 }
