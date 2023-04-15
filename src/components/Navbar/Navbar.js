@@ -69,7 +69,7 @@ const Navbar = () => {
           animate={isOpen ? "opened" : "closed"}
         >
           <motion.li variants={listFadeIn}>
-            <a href="#about">About</a>
+            <a href="#top">About</a>
           </motion.li>
           <motion.li variants={listFadeIn}>
             <a href="#projects">Projects</a>
@@ -92,7 +92,7 @@ const Navbar = () => {
           <div className={styles["right-column-lg"]}>
             <ul className={styles["menu-lg"]}>
               <li>
-                <a className={styles.tag} href="#about">
+                <a className={styles.tag} href="#top">
                   About
                 </a>
               </li>

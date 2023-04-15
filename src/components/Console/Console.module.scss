@@ -7,7 +7,6 @@ Console
  */
 
 .console {
-  overflow: auto;
   margin-top: 80px;
 }
 
@@ -303,7 +302,7 @@ Media queries
 /* Tablet and up */
 @media (min-width: 768px) {
   .console-container {
-    height: 100vh;
+    height: 60vh;
     position: relative;
   }
 
@@ -318,7 +317,18 @@ Media queries
 
 /* Laptop and up */
 @media (min-width: 1024px) {
+  .console-container {
+    height: 60vh;
+  }
+
   .console {
     margin-top: 110px;
+  }
+}
+
+/* Laptop L and up */
+@media (min-width: 1440px) {
+  .console-container {
+    height: 55vh;
   }
 }
