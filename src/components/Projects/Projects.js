@@ -18,7 +18,7 @@ const Projects = () => {
         "An eCommerce platform with fully functional feautures such as a shopping cart, admin management, a product review system, pagination, and PayPal/credit card integration.",
       links: [
         "https://github.com/sarahtguindy/mechanikeys",
-        "https://mechanikeys.herokuapp.com/",
+        "https://mechanikeys-mern.onrender.com",
       ],
     },
     {
