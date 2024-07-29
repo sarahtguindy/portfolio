@@ -7,7 +7,7 @@ const Footer = () => {
       <section className={styles.footer}>
         <footer>
           <p className={styles.copyright}>
-            Copyright &copy; 2022 sarahtguindy.dev
+            Copyright &copy; 2024 sarahtguindy.dev
           </p>
           <div className={styles.socials}>
             <a

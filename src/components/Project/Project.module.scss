@@ -78,6 +78,12 @@ Project
     .card {
         position: relative;
         padding: 15px;
+        > p {
+          position: absolute;
+          top: 10rem;
+          left: 40px;
+          right: 40px;
+        }
     
         .links {
             position: absolute;

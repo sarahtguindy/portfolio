@@ -40,10 +40,9 @@ const Console = () => {
                 <br />
                 <br />
                 <p>
-                  A developer, cybersecurity enthusiast, and privacy
-                  advocate. I'm typically coding, reading about the
-                  latest vulnerability, or creating pixel art in my spare time.
-                  I also spend way too much time in the terminal.
+                  Software Developer based in Toronto with over 2 years of
+                  professional experience in backend and mobile development, and
+                  a background in QA analysis.
                 </p>
               </p>
               <div className={styles["squares-wrapper"]}>
